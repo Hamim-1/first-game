@@ -1,10 +1,13 @@
 {
   "name": "new-tailwind",
   "version": "1.0.0",
+  "homepage": "https://Hamim-1.github.io.first-game/",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":"tailwind -i ./src/tailwind.css -o ./output/style.css -w"
+    "build": "tailwind -i ./src/tailwind.css -o ./output/style.css -w",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
